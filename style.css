@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.wrapper {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    /* background: #0ef; */
+    border-radius: 20px;
+    padding: 40px;
+    /* border: 5px double #0ef; */
+    border: 5px double blue;
+    box-shadow: 10px 10px 2px #0ef;
+    animation: shake 2s linear infinite;
+}
+
+@keyframes shake {
+    0% {
+        border-bottom: 0px black;
+        border-right: 0px black;
+        border-radius: 50px;
+        /* transform: rotate(0deg); */
+        /* border-width: 20px; */
+    }
+
+    50% {
+        border: 3px double #0e0;
+        border-bottom: 0px black;
+        border-right: 0px black;
+        box-shadow: 10px 10px 2px #0e0;
+        /* transform: rotate(1deg); */
+    }
+
+    100% {
+        /* border: 3px double blue; */
+        /* border: 20px double #0ef; */
+        border-radius: 50px;
+        border-bottom: 0px black;
+        border-right: 0px black;
+        box-shadow: 10px 10px 2px blue;
+        /* transform: rotate(0deg); */
+    }
+
+}
+
+/* @keyframes shake {
+  from {
+    box-shadow: 10px 10px 2px #0ef;
+  }
+  to {
+    box-shadow: 20px 20px 4px #0ef;
+  }
+} */
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-class {
+    min-width: 100px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+}
+
+.input-group input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.remember {
+    margin: -5px 0 15px 5px;
+}
+
+.remember label {
+    color: #fff;
+    font-size: 14px;
+}
+
+.remember label input {
+    accent-color: #0ef;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #0ef;
+    box-shadow: 0 0 10px#0ef;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
